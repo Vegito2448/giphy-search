@@ -1,31 +1,100 @@
-# React + TypeScript + Vite
+# GIFs App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GIFs App es una aplicación web que permite buscar y mostrar GIFs utilizando la API de Giphy. Esta aplicación está construida con React y Vite para un desarrollo rápido y eficiente.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Búsqueda de GIFs utilizando la API de Giphy.
+- Visualización de resultados en una cuadrícula.
+- Añadir nuevas categorías de búsqueda.
+- Animaciones para una mejor experiencia de usuario.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
+- Vite: Herramienta de desarrollo rápida para proyectos de front-end.
+- API de Giphy: Proporciona acceso a una amplia base de datos de GIFs.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Sigue estos pasos para configurar y ejecutar la aplicación localmente:
+
+1. Clona el repositorio:
+
+    ```bash
+    git clone https://github.com/tu-usuario/gifs-app.git
+    ```
+
+2. Navega al directorio del proyecto:
+
+    ```bash
+    cd gifs-app
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4. Crea un archivo `.env` en la raíz del proyecto y añade tu clave de API de Giphy:
+
+    ```env
+    VITE_GIPHY_API_KEY=tu_clave_de_api
+    ```
+
+5. Inicia la aplicación en modo desarrollo:
+
+    ```bash
+    npm run dev
+    ```
+
+6. Abre tu navegador y navega a `http://localhost:3000`.
+
+## Scripts Disponibles
+
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Construye la aplicación para producción.
+
+## Estructura del Proyecto
+
+```
+gifs-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── AddCategory.jsx
+│   │   ├── GifGrid.jsx
+│   │   └── GifGridItem.jsx
+│   ├── hooks/
+│   │   └── useFetch.js
+│   ├── data/
+│   │   └── categories.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# giphy-search
+## Uso
+
+1. **Añadir Categoría**: Escribe una categoría en el campo de entrada y presiona "Enter" para añadirla a la lista de búsquedas.
+2. **Ver Resultados**: Los resultados de la búsqueda de GIFs para cada categoría añadida se mostrarán en una cuadrícula debajo del campo de entrada.
+3. **Animaciones**: Disfruta de las animaciones cuando se cargan los GIFs y se muestran en la cuadrícula.
+
+## Contribuyendo
+
+Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras un problema, por favor abre un issue o un pull request en el repositorio.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+
+## Contacto
+
+Si tienes alguna pregunta o comentario sobre la aplicación, no dudes en contactar a través de [jesusdpeaj18102001@gmail.com](mailto:jesusdpeaj18102001@gmail.com).
