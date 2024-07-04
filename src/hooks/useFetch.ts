@@ -6,6 +6,7 @@ type Props = {
 };
 
 function useFetch<T>({ url, options }: Props) {
+
   const isMounted = useRef(true);
 
   const [request, setRequest] = useState({
@@ -22,20 +23,28 @@ function useFetch<T>({ url, options }: Props) {
     const fetchData = async () => {
       try {
         const response = await fetch(url, options);
+
         const data = await response.json() as T;
-        if (!isMounted.current) return; // Skip the state update if the component is already
-        setRequest({
-          data,
-          loading: false,
-          error: null
-        });
+
+        if (isMounted.current) {
+
+          setRequest({
+            data,
+            loading: false,
+            error: null
+          });
+
+        }
       } catch (error) {
-        if (!isMounted.current) return; // Skip the state update if the component is already
-        setRequest({
-          data: null,
-          loading: false,
-          error
-        });
+        if (isMounted.current) {
+
+          setRequest({
+            data: null,
+            loading: false,
+            error
+          });
+
+        }
       }
     };
     if (isMounted.current)

@@ -8,7 +8,6 @@ export const AddCategory = ({ setCategories }: AddCategoryProps) => {
 
   const [inputValue, setInputValue] = useState('');
 
-
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };

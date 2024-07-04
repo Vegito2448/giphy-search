@@ -1,3 +1,4 @@
+import 'animate.css';
 import { useFetch } from "../hooks";
 import { GifsResponse } from "../interfaces";
 import { GifGridItem } from "./GifGridItem";
@@ -5,6 +6,7 @@ import { GifGridItem } from "./GifGridItem";
 interface GifGridProps {
   category: string;
 }
+
 export const GifGrid = ({ category }: GifGridProps) => {
   const apiKey = import.meta.env.VITE_GIPHY_API_KEY;
 
@@ -17,7 +19,7 @@ export const GifGrid = ({ category }: GifGridProps) => {
   return (
     <>
       <h3
-        className="animate__animated animate__fadeIn animate__delay-2s"
+        className="animate__animated animate__fadeIn"
       >{category}</h3>
       <div
         className="card-grid animate__animated animate__fadeIn animate__delay-2s"
@@ -26,8 +28,13 @@ export const GifGrid = ({ category }: GifGridProps) => {
           className="animate__animated animate__flash animate__infinite animate__slower"
         >Loading...</p>}
         {!loading && images && Boolean(images.length) && <ol className="card-grid" >
-          {images.map((img) => (
-            <GifGridItem key={img.id} {...img} />
+          {images.map(({ id, title, images: { downsized_medium: { url } } }) => (
+            <GifGridItem
+              key={id}
+              title={title}
+              url={url}
+              id={id}
+            />
           ))}
         </ol>}
       </div >
