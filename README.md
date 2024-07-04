@@ -93,7 +93,7 @@ Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras un proble
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+Este proyecto está licenciado bajo la Licencia MIT.
 
 ## Contacto
 
