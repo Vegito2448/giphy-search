@@ -1,0 +1,180 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <h2>
+    Gif's App
+  </h2>
+  <hr />
+  <form>
+    <input
+      style="margin-right: 10px;"
+      type="search"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <h3
+    class="animate__animated animate__fadeIn"
+  >
+    High School of the Dead
+  </h3>
+  <div
+    class="card-grid animate__animated animate__fadeIn animate__delay-2s"
+  >
+    <p
+      class="animate__animated animate__flash animate__infinite animate__slower"
+    >
+      Loading...
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`App Component > matches snapshot after loading gifs 1`] = `
+<DocumentFragment>
+  <h2>
+    Gif's App
+  </h2>
+  <hr />
+  <form>
+    <input
+      style="margin-right: 10px;"
+      type="search"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <h3
+    class="animate__animated animate__fadeIn"
+  >
+    High School of the Dead
+  </h3>
+  <div
+    class="card-grid animate__animated animate__fadeIn animate__delay-2s"
+  >
+    <ol
+      class="card-grid"
+    >
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="cherry blossoms sakura GIF"
+          src="https://media0.giphy.com/media/QaDOoqfYUy1lS/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          cherry blossoms sakura GIF
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="cherry blossoms sakura GIF"
+          src="https://media4.giphy.com/media/dDvQJ0v876Ly8/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          cherry blossoms sakura GIF
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="cherry blossoms sakura GIF"
+          src="https://media3.giphy.com/media/yY0Gbq4ADqYRq/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          cherry blossoms sakura GIF
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="all the great politicians are dead GIF by My Entire High School Sinking Into The Sea"
+          src="https://media1.giphy.com/media/3o7btVXwVOir5ZiTfy/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          all the great politicians are dead GIF by My Entire High School Sinking Into The Sea
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="anders holm GIF by Workaholics"
+          src="https://media4.giphy.com/media/3ohfFJ4SGB09c03J6M/giphy-downsized-medium.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy-downsized-medium.gif&ct=g"
+        />
+        <p>
+          anders holm GIF by Workaholics
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="season 3 starz GIF by Ash vs Evil Dead"
+          src="https://media2.giphy.com/media/1BcSaRcJua1T0iY5Ot/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          season 3 starz GIF by Ash vs Evil Dead
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="season 1 GIF by Twin Peaks on Showtime"
+          src="https://media4.giphy.com/media/3ohfFNDCD0sYzcaSNW/giphy-downsized-medium.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy-downsized-medium.gif&ct=g"
+        />
+        <p>
+          season 1 GIF by Twin Peaks on Showtime
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="season 3 starz GIF by Ash vs Evil Dead"
+          src="https://media1.giphy.com/media/OkhLEfgBh69UZJkhdn/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          season 3 starz GIF by Ash vs Evil Dead
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="High School Facebook GIF by Five Points"
+          src="https://media3.giphy.com/media/249G8b3JNGyf65romD/giphy.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        />
+        <p>
+          High School Facebook GIF by Five Points
+        </p>
+      </li>
+      <li
+        class="card animate__animated animate__fadeIn animate__delay-2s"
+      >
+        <img
+          alt="High School Musical GIF by High School Musical: The Musical: The Series | Disney+"
+          src="https://media1.giphy.com/media/WT4NHgqaxO5wcGeecq/giphy-downsized-medium.gif?cid=dc9895f6l4xt7muqs0gh310qx3b7sbbcw0slz7ehu4m5ibx0&ep=v1_gifs_search&rid=giphy-downsized-medium.gif&ct=g"
+        />
+        <p>
+          High School Musical GIF by High School Musical: The Musical: The Series | Disney+
+        </p>
+      </li>
+    </ol>
+  </div>
+</DocumentFragment>
+`;

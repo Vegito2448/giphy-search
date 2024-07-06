@@ -1,16 +1,19 @@
 import { Dispatch, SetStateAction } from "react";
 import { GifsResponse } from "../interfaces";
 
-interface getGifsProps {
-  category: string;
-  setImages: Dispatch<SetStateAction<{
-    id: string;
-    title: string;
-    url: string;
-  }[]>>;
+export interface Gif {
+  id: string;
+  title: string;
+  url: string;
 }
 
-const getGifs = async ({ setImages, category }: getGifsProps) => {
+
+interface getGifsProps {
+  category: string;
+  setImages: Dispatch<SetStateAction<Array<Gif>>>;
+}
+
+const getGifs = async ({ setImages, category }: getGifsProps): Promise<Gif[] | Error> => {
 
   const apiKey = import.meta.env.VITE_GIPHY_API_KEY;
 
@@ -18,17 +21,18 @@ const getGifs = async ({ setImages, category }: getGifsProps) => {
   try {
     const response = await fetch(url);
     const { data } = await response.json() as GifsResponse;
-    const gifs = data.map(({ id, title, images: { downsized_medium: { url } } }) => {
-      return {
+
+    const gifs = data && data.length ? data.map(({ id, title, images: { downsized_medium: { url } } }) => ({
         id,
         title,
         url,
-      };
-    });
+    })) : [];
+    if (gifs && gifs.length > 0)
     setImages(gifs);
+    return gifs;
 
   } catch (error) {
-    return error;
+    return error as Error;
   }
 };
 

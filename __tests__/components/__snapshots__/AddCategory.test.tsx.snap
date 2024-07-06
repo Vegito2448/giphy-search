@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddCategory Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <form>
+    <input
+      style="margin-right: 10px;"
+      type="search"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</DocumentFragment>
+`;

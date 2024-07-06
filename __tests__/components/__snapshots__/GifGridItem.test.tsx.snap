@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GifGridItem Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="card animate__animated animate__fadeIn animate__delay-2s"
+  >
+    <img
+      alt="Title"
+      src="https://localhost/image.jpg"
+    />
+    <p>
+      Title
+    </p>
+  </div>
+</DocumentFragment>
+`;
